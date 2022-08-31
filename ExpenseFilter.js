@@ -1,10 +1,12 @@
 import React from "react";
 import "./expenseFilter.css";
+import ExpenseItems from "./ExpenseItems";
 
 const ExpenseFilter = (props) => {
   const filterChange = (event) => {
     props.onExpenseFilter(event.target.value);
   };
+ 
   return (
     <div className="expenses-filter">
       <div className="expenses-filter__control">
